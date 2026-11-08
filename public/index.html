@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Campus Connect — Your campus, connected</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-icon">✦</span><span>Campus<span class="accent">Connect</span></span></div>
+    <p class="campus-label">YOUR CAMPUS, ONE PLACE</p>
+    <nav id="nav">
+      <button class="nav active" data-page="home">⌂ <span>Home</span></button>
+      <button class="nav" data-page="marketplace">▣ <span>Marketplace</span></button>
+      <button class="nav" data-page="lost-found">⌕ <span>Lost & Found</span></button>
+      <button class="nav" data-page="events">◷ <span>Club Events</span></button>
+      <button class="nav" data-page="notes">▤ <span>Class Notes</span></button>
+      <button class="nav" data-page="attendance">✓ <span>Attendance Tracker</span></button>
+      <button class="nav" data-page="timetable">▦ <span>Timetable</span></button>
+      <button class="nav" data-page="placements">↗ <span>Placement Updates</span></button>
+      <button class="nav" data-page="forum">◎ <span>Anonymous Forum</span></button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="profile" id="profile"><div class="avatar">?</div><div><b>Guest</b><small>Sign in to get started</small></div></div>
+      <button class="btn outline full" id="authBtn">Sign in / Register</button>
+    </div>
+  </aside>
+  <main>
+    <header class="topbar"><div class="mobile-brand">✦ CampusConnect</div><div class="top-actions"><span class="pill">● Campus community</span><button class="btn primary" id="quickAdd">＋ Create post</button></div></header>
+    <section id="content" class="content"></section>
+    <footer>Campus Connect · Built for your college community <span>Keep it kind. Keep it on campus.</span></footer>
+  </main>
+</div>
+<div class="modal-backdrop hidden" id="modal"><div class="modal"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+<div class="toast" id="toast"></div>
+<script src="./app.js"></script>
+</body></html>
